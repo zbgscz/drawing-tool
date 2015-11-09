@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html style='width:90%; height:95%'>
+<head>
+<link rel="stylesheet" href="jquery-ui-1.11.4.custom/jquery-ui.css" />
+<link rel="stylesheet" href="jquery-ui-1.11.4.custom/jquery-ui.structure.css" />
+<link rel="stylesheet" href="jquery-ui-1.11.4.custom/jquery-ui.theme.css" />
+
+<script type="text/javascript" src="js/jquery-1.11.0.js"></script>
+<script type="text/javascript" src="jquery-ui-1.11.4.custom/jquery-ui.js"></script>
+<script type="text/javascript" src="js/object.js"></script>
+<script type="text/javascript" src="js/canvas.js"></script>
+</head>
+<body style='width:100%; height:100%'>
+	<div id='dialog' style='width:100%; height:5%'>
+		<fieldset style='float:left;'>
+			<legend>Tools</legend>
+			<div id='edit'>
+				<button id='undo'>undo</button>
+				<button id='redo'>redo</button>
+				<button id='clear'>clear</button>
+			</div>
+		</fieldset>
+		<fieldset style='float:left;position:relative'>
+			<legend>Edit</legend>
+			<div>
+				<span>
+					<input type='radio' id='free' name='drawing' checked='checked'>Free
+					<input type='radio' id='line' name='drawing'>Line
+					<input type='radio' id='rectangle' name='drawing'>Rectangle
+					<input type='radio' id='circle' name='drawing'>Circle
+					<input type='radio' id='move' name='drawing'>Move
+					<input type='radio' id='delete' name='drawing'>Delete
+				</span>
+			</div>
+		</fieldset>
+	</div>
+	<div id='container' style='float:left; width:100%; height:90%'>
+		<fieldset id='canvasField' style='float:left; width: 100%; height: 100%'>
+			<legend>Canvas</legend>
+			<canvas id='myCanvas' style='border:1px solid #d3d3d3;'></canvas>
+		</fieldset>
+	</div>
+</body>
+</html>
